@@ -3,9 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000000;
+  color: #37d5d6;
+}
 .menu {
-  background-color: #232323;
+  background-color: #000000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -108,5 +113,91 @@
   }
   .triggered .bar:nth-child(3) {
     transform: translateY(-6px) rotate(-45deg);
+  }
+}
+
+/* ================Landing Page==================== */
+
+.infoText {
+  padding: 0 8%;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-image: url(./assests/soham.png);
+  background-repeat: no-repeat;
+  /* background-size: 800px 1100px; */
+  background-position: left center;
+  align-items: center;
+}
+.first {
+  padding-top: 200px;
+}
+.line {
+  display: flex;
+  justify-content: flex-end;
+  color: #b2b2b2;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.myName {
+  display: flex;
+  justify-content: flex-end;
+  color: #dedce1;
+  font-size: 50px;
+  padding: 8px 0px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px #333, -2px -2px 2px #333;
+}
+
+.myName span {
+  color: #50a7c2;
+  padding-left: 10px;
+}
+.resume {
+  padding: 10px 12px;
+  border: 2px solid #79747b;
+  border-radius: 20px;
+  outline: none;
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #7c7780;
+  background-color: #000000;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.resume:hover {
+  background: linear-gradient(-225deg, #b7f8db 0%, #50a7c2 100%);
+  color: #0e617a;
+}
+.social_icon {
+  position: absolute;
+  bottom: 60px;
+  right: 8%;
+}
+.social_link {
+  font-size: 24px;
+  padding-right: 20px;
+  color: #dedce1;
+  transition: 0.4s;
+}
+.social_link:hover {
+  color: #37d5d6;
+  transform: scale(1);
+}
+
+@media (max-width: 768px) {
+  .infoText {
+    background-position: center;
+  }
+  .first {
+    padding-top: 160px;
+  }
+  .line {
+    font-weight: bold;
+    color: #ffffff;
+    text-align: right;
   }
 }
