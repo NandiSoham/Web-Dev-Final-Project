@@ -39,8 +39,8 @@
           <li class="nav_items">
             <a href="#contact" class="nav_links">Contact</a>
           </li>
-          <i class="ri-close-line toggle_close"></i>
         </ul>
+        <i class="ri-close-line toggle_close"></i>
         <div class="button" id="menuBtn">
           <div class="bar"></div>
           <div class="bar"></div>
@@ -48,41 +48,190 @@
         </div>
       </nav>
 
+      <!-- ==============Landing Page============================ -->
+
       <main>
         <section id="landing">
           <div class="infoText">
-            <p class="first line">Hello There!! I'm</p>
+            <h3 class="first line">Hello There!! I'm</h3>
             <h1 class="myName">Soham<span>Nandi</span></h1>
-            <p class="line">Web Developer</p>
+            <h2 class="line">Web Developer</h2>
             <div class="social_icon">
-              <a class="social_item" href="#"
-                ><i class="fa-brands fa-linkedin social_link"></i
-              ></a>
-              <a class="social_item" href="#"
-                ><i class="fa-brands fa-github social_link"></i
-              ></a>
-              <a class="social_item" href="#"
-                ><i class="fa-brands fa-instagram social_link"></i
-              ></a>
+              <a
+                class="social_link"
+                href="https://www.linkedin.com/in/soham-nandi-a359901a7/"
+              >
+                Linkdin</a
+              >
+              <a class="social_link" href="https://github.com/NandiSoham"
+                >Github</a
+              >
+              <a
+                class="social_link"
+                href="https://instagram.com/valar_morghulis_21?igshid=ZDdkNTZiNTM="
+                >Instagram</a
+              >
             </div>
           </div>
         </section>
 
+        <!-- ===================================aboutme====================================== -->
+
         <section id="about" class="about">
           <h2 class="section_title">About <span>Me</span></h2>
           <div class="about_content">
-              <div class="about_text">
-                  <h2 class="about_title">Who am I?</h2>
-                  <p class="about_des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <button class="resume">Download Resume</button>
-              </div>
-              <div class="about_image">
-                  <img src="./assests/Soham_about.jpeg" alt="Photo of Soham about section" width="400" height="500">
-              </div>
+            <div class="about_text">
+              <h2 class="about_title">Who am I?</h2>
+              <p class="about_des">
+                As a graduate student in Computer Science at Portland State
+                University, I possess a fervent passion for web development that
+                has been nurtured since my undergraduate studies. My journey as
+                a web developer commenced with an internship at Techsalicious, a
+                promising start-up company in India, where I gained valuable
+                knowledge and experience in the field. Although web development
+                has been my primary focus, my intellectual curiosity and the
+                boundless potential of technology have sparked my interest in
+                the field of data science. I am eager to embark on a career in
+                data science that will allow me to apply my technical acumen and
+                creative problem-solving skills.
+              </p>
+              <button class="resume">Download Resume</button>
+            </div>
+            <div class="about_image">
+              <img
+                src="./assests/Soham_about.jpeg"
+                alt="photo of soham for about section"
+                width="400"
+                height="500"
+              />
+            </div>
           </div>
-      </section>
+        </section>
+
+        <!-- ===================================Work Experience======================================= -->
+
+        <section class="mywork" id="mywork">
+          <h2 class="section_title">exper<span>ience</span></h2>
+          <div class="mywork_items">
+            <div class="mywork_links">
+              <div class="dot"></div>
+              <div class="mywork_date">2021-2022</div>
+              <div class="mywork_content">
+                <h3 class="mywork_content_title">Telaverge</h3>
+                <p class="mywork_content_text">
+                  I was able to enhance operational efficiency by 42% by
+                  utilizing Node JS for automated data updates and entry. This
+                  system was meticulously monitored through the use of AWS and
+                  Putty. Moreover, I assumed a leadership position in overseeing
+                  the screen merge validation segment of a tele-surgery
+                  application.
+                </p>
+              </div>
+            </div>
+
+            <div class="mywork_links">
+              <div class="dot"></div>
+              <div class="mywork_date">2020-2021</div>
+              <div class="mywork_content">
+                <h3 class="mywork_content_title">Techsalicious</h3>
+                <p class="mywork_content_text">
+                  I played a vital role in the development of the front-end
+                  section of the official website for the organization utilizing
+                  the React JS framework. Furthermore, I took the lead on the
+                  front-end aspect of an e-commerce initiative, wherein I
+                  designed an exceptional user experience, determined back-end
+                  data display through the Fetch API, created the styling and
+                  interface with SASS, and incorporated optimized website
+                  navigation. Collaborating with backend developers, I
+                  facilitated the generation of dynamic web pages utilizing the
+                  React JS library, thus ensuring seamless functionality and
+                  user engagement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================================Projects========================================== -->
+        <section class="project">
+          <h2 class="section_title">My <span>Projects</span></h2>
+          <div class="project_tabs">
+            <div class="tabs">
+              <div class="tabs_head">
+                <div class="toggle_project is-active">
+                  <span class="bullet">ML</span>
+                </div>
+                <div class="toggle_project">
+                  <span class="bullet">IP</span>
+                </div>
+                <div class="toggle_project">
+                  <span class="bullet">DBMS</span>
+                </div>
+              </div>
+              <div class="desc_body">
+                <div class="content_project is-active">
+                  <h2 class="project_name">DETECTION OF LUNG TUBERCULOSIS</h2>
+                  <p class="project_para">
+                    This ML project aims to detect lung tuberculosis using
+                    machine learning algorithms. The study focuses on comparing
+                    the performance of KNN classifiers and the Boosting
+                    Algorithm in predicting TB diagnosis. Results indicate that
+                    the Boosting Algorithm is the most effective in accurately
+                    predicting TB diagnosis, which can lead to earlier detection
+                    and treatment.
+                  </p>
+                  <a
+                    href="https://github.com/NandiSoham/DETECTION-OF-LUNG-TUBERCULO---USING-MLSIS"
+                    class="github_btn"
+                    >GitHub Link</a
+                  >
+                </div>
+                <div class="content_project">
+                  <h2 class="project_name">IRC Project</h2>
+                  <p class="project_para">
+                    A team of three developers, including myself, collaborated
+                    to create an Internet Relay Chat (IRC) system consisting of
+                    an IRC server and client interface. Our primary objective
+                    during the first semester was to implement chat
+                    functionality for the system, which enables users to connect
+                    and communicate using personalized usernames. However, we
+                    have set ambitious goals for the project's future, which
+                    include the incorporation of voice functionality and secure
+                    messaging features.
+                  </p>
+                  <a href="https://github.com/NandiSoham/IRC" class="github_btn"
+                    >GitHub Link</a
+                  >
+                </div>
+                <div class="content_project">
+                  <h2 class="project_name">Soccer Management System</h2>
+                  <p class="project_para">
+                    This project focuses on developing a soccer management
+                    system using a dataset containing information about goal
+                    details, player details, coach, and referee details. The
+                    system will provide an organized and well-documented
+                    approach to the game, keeping track of statistics on teams,
+                    players, events, and more. The database includes tables for
+                    goal details, match details, penalty shootout, player
+                    in-out, and others. The system will be designed to handle
+                    data related to various types of goals, substituted players,
+                    missed goals, win-lose or draw status, goal difference, and
+                    more. Overall, the project aims to create an efficient and
+                    user-friendly platform for managing and analyzing
+                    soccer-related data.
+                  </p>
+                  <a
+                    href="https://github.com/NandiSoham/Soccer-Management-System"
+                    class="github_btn"
+                    >GitHub Link</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- =========================================contact form================================== -->
+        
       </main>
     </div>
   </body>
