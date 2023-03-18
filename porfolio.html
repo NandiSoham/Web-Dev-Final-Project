@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/gif" href="./assests/final_logo.webp">
     <link rel="stylesheet" href="./portfolio.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
       rel="stylesheet"
     />
     <script async src="./portfolio.js"></script>
-    <title>Document</title>
+    <title>Soham's portfolio</title>
   </head>
 
   <body>
@@ -19,7 +20,7 @@
         <a href="#" class="logo">
           <img
             class="img_fluid"
-            src="./assests/final_logo.png"
+            src="./assests/final_logo.webp"
             alt="Logo of Soham"
           />
         </a>
@@ -31,7 +32,7 @@
             <a href="#about" class="nav_links">About</a>
           </li>
           <li class="nav_items">
-            <a href="#mywork" class="nav_links">My Work</a>
+            <a href="#mywork" class="nav_links">Experience</a>
           </li>
           <li class="nav_items">
             <a href="#projects" class="nav_links">Projects</a>
@@ -58,19 +59,24 @@
             <h2 class="line">Web Developer</h2>
             <div class="social_icon">
               <a
+                aria-label="linkedin link"
                 class="social_link"
                 href="https://www.linkedin.com/in/soham-nandi-a359901a7/"
               >
-                Linkdin</a
-              >
-              <a class="social_link" href="https://github.com/NandiSoham"
-                >Github</a
-              >
+                <i class="fa-brands fa-linkedin"></i
+              ></a>
               <a
+                aria-label="github link"
+                class="social_link"
+                href="https://github.com/NandiSoham"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                aria-label="instagram link"
                 class="social_link"
                 href="https://instagram.com/valar_morghulis_21?igshid=ZDdkNTZiNTM="
-                >Instagram</a
-              >
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </div>
           </div>
         </section>
@@ -95,11 +101,16 @@
                 data science that will allow me to apply my technical acumen and
                 creative problem-solving skills.
               </p>
-              <button class="resume">Download Resume</button>
+              <a
+                target="blank"
+                href="https://drive.google.com/file/d/1sG16ayT9NOedHO0-PZt5oaTfDgsLL8YU/view?usp=share_link"
+                class="resume"
+                >Download Resume</a
+              >
             </div>
             <div class="about_image">
               <img
-                src="./assests/Soham_about.jpeg"
+                src="./assests/Soham_about.webp"
                 alt="photo of soham for about section"
                 width="400"
                 height="500"
@@ -153,7 +164,7 @@
         </section>
 
         <!-- ===================================Projects========================================== -->
-        <section class="project">
+        <section id="projects" class="project">
           <h2 class="section_title">My <span>Projects</span></h2>
           <div class="project_tabs">
             <div class="tabs">
@@ -181,6 +192,7 @@
                     and treatment.
                   </p>
                   <a
+                    target="blank"
                     href="https://github.com/NandiSoham/DETECTION-OF-LUNG-TUBERCULO---USING-MLSIS"
                     class="github_btn"
                     >GitHub Link</a
@@ -199,7 +211,10 @@
                     include the incorporation of voice functionality and secure
                     messaging features.
                   </p>
-                  <a href="https://github.com/NandiSoham/IRC" class="github_btn"
+                  <a
+                    target="blank"
+                    href="https://github.com/NandiSoham/IRC"
+                    class="github_btn"
                     >GitHub Link</a
                   >
                 </div>
@@ -221,6 +236,7 @@
                     soccer-related data.
                   </p>
                   <a
+                    target="blank"
                     href="https://github.com/NandiSoham/Soccer-Management-System"
                     class="github_btn"
                     >GitHub Link</a
@@ -231,7 +247,29 @@
           </div>
         </section>
         <!-- =========================================contact form================================== -->
-        
+        <section id="contact" class="contact_form">
+          <h2 class="section_title">Reach <span>Me</span> Out</h2>
+          <form class="my_form" action="/submit">
+            <div class="half_form">
+              <div class="form_item">
+                <label class="name_of_form" for="name">NAME</label>
+                <input class="input_name" type="text" id="name" />
+              </div>
+              <div class="form_item">
+                <label class="email_of_form" for="email">EMAIL</label>
+                <input class="input_email" type="email" id="email" />
+              </div>
+            </div>
+            <div class="full_form">
+              <label class="message_of_form" for="message">MESSAGE</label>
+              <textarea class="area_message" id="message"></textarea>
+            </div>
+            <div class="action">
+              <input class="input_submit" type="Submit" value="SEND" />
+              <input class="input_reset" type="reset" value="RESET" />
+            </div>
+          </form>
+        </section>
       </main>
     </div>
   </body>
